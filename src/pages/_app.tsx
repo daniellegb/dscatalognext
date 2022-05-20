@@ -1,5 +1,6 @@
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import { Navbar } from "../components";
 
 import "../styles/custom.scss";
 import "../styles/globals.css";
@@ -18,8 +19,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           crossOrigin="anonymous"
         />
 
-        <title>DS Catalog NextJS</title>
+        <title>Catalog NextJS</title>
       </Head>
+      <Navbar />
       <Component {...pageProps} />;
     </>
   );
